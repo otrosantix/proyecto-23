@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Weather App</title>
+<link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+<main class="app">
+<h1>Clima</h1>
+<form id="search-form" class="search">
+<label for="location">Ubicación</label>
+<input id="location" type="text" placeholder="Ej: Sogamoso" required>
+<button type="submit">Buscar</button>
+<button id="refresh" type="button" disabled>Actualizar</button>
+</form>
+<p id="status" aria-live="polite">Escribe una ciudad para ver el clima.</p>
+<section id="current" class="current" hidden>
+<h2 id="place"></h2>
+<p id="temp" class="temp"></p>
+<p id="condition"></p>
+<p id="wind"></p>
+<p id="rain"></p>
+</section>
+<section id="past-section" hidden>
+<h2>Últimas 24 horas</h2>
+<div class="table-wrap"><table id="past"></table></div>
+</section>
+<section id="future-section" hidden>
+<h2>Próximas 24 horas</h2>
+<div class="table-wrap"><table id="future"></table></div>
+</section>
+</main>
+<script src="js/script.js"></script>
+</body>
+</html>
